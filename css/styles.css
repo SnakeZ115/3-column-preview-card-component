@@ -1,0 +1,109 @@
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --white: #FFFFFF;
+    --titleFont: 'Big Shoulders Display', sans-serif;
+    --paragraphFont: 'Lexend Deca', sans-serif;
+}
+
+.cards {
+    min-height: 100dvh;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--white);
+    font-family: var(--paragraphFont);
+    border: 2px solid var(--white);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.button-1 {
+    color: var(--brightOrange);
+}
+
+.button-2 {
+    color: var(--darkCyan);
+}
+
+.button-3 {
+    color: var(--veryDarkCyan);
+}
+
+.button-1:hover {
+    background-color: var(--brightOrange);
+    color: var(--white);
+}
+
+.button-2:hover {
+    background-color: var(--darkCyan);
+    color: var(--white);
+}
+
+.button-3:hover {
+    background-color: var(--veryDarkCyan);
+    color: var(--white);
+}
+
+.card {
+    padding: 50px;
+    color: var(--white);
+    line-height: 1.8;
+}
+
+.card h1 {
+    font-family: var(--titleFont);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.card p {
+    font-family: var(--paragraphFont);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+
+.card-1 {
+    background-color: var(--brightOrange);
+    border-radius: 10px 0 0 10px;
+}
+
+.card-2 {
+    background-color: var(--darkCyan);
+}
+
+.card-3 {
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 10px 10px 0;
+}
+
+@media (min-width: 390px) and (max-width: 1000px){
+    .cards {
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    .card-1 {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .card-3 {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .footer{
+         margin-top: 20px;
+    }
+
+}
+
